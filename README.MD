@@ -5,16 +5,19 @@ Setup Steps:
 
 Programming Instructions:
 (All code should be added within App.java)
-1) Create an applet that displays hello world when you run it 
 
-2) Create a button that's labeled press me
+For this part of the project, we’ll focus on creating the layout for your solitaire game using BorderLayout and GridLayout. Follow these instructions to set up each section and add placeholder text.
 
-3) Make it so when you press the button the text in your label changes to read "you did it" instead of "hello world". (Look up "Action Listener" to do this part)
-
-4) Use either a (grid layout)[https://www.youtube.com/watch?v=wdmWBZ6gerg&list=PLvTjg4siRgU1ARZ8oAcJbKTOZYHqPnJJY&index=39] or a (flow layout)[https://www.youtube.com/watch?v=jcvGJyy5tEk&list=PLvTjg4siRgU1ARZ8oAcJbKTOZYHqPnJJY&index=40] to create multiple buttons that change the text to different phrases. 
+1) Create the Main Frame: Start by creating a JFrame to hold your game layout. Set the JFrame's layout to BorderLayout. Make sure to set the frame to visible!
+2) Create a JPanel for Each BorderLayout Section: We will use the five main areas in BorderLayout: NORTH, SOUTH, EAST, WEST, and CENTER.
+3) Top Panel (NORTH): Create a JPanel for the top section. Set it to be visible in the NORTH area of the BorderLayout.
+Add a JLabel with the text "Your Name's Solitaire" (replace "Your Name" with your actual name) and add this to the top panel.
+4) Left Panel (WEST): Create another JPanel for the left section, which will represent the "pile" area. Label it as "Pile" and add this panel to the WEST area.
+5) Main Play Area (CENTER):This is where the seven main stacks will go. Create a JPanel "playArea" and set its layout to GridLayout with one row and seven columns. Use a loop to create seven JPanels, each representing a "stack." Inside each, add a JLabel with the text "Stack 1", "Stack 2", etc. Add each stack to playArea, then add playArea to the CENTER area.
+6) Bottom Panel (SOUTH): Create a JPanel for the bottom section, which can hold any information or additional text you’d like.
 
 Testing:
-To test your code, interact with the GUI you create! 
+To test your code, open the GUI you create!
 
 Submission:
 Run the following 3 commands in the terminal:
@@ -23,6 +26,8 @@ Run the following 3 commands in the terminal:
 3) git push
 
 Additional Resources:
+
+Layout resources are provided in Canvas. 
 
 https://docs.oracle.com/javase/tutorial/uiswing/components/index.html 
 
